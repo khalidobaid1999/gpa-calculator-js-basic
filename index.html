@@ -5,21 +5,24 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="src/js/main.js"></script>
 <body>
-	<center style="max-width:400px;width:100%">
+	<center style="max-width:400px;margin:0px auto">
 	<h1>GPA calculator</h1>
+	<hr>
+	<input type="radio" class="five-gpa" name="gpa-type" />5.0 GPA system
+	<input type="radio" class="four-gpa" name="gpa-type" />4.0 GPA system
 	<section class="subject" id="subject1">
 		<h4>Subject #<span class="subject-number">1</span></h4>
 		<input type="number" style="height:30px;width:100%;" class="hours1" min="0" placeholder="hours" /><br/>
 		<select class="grade1" style="height:30px;width:100%">
-			<option value="5.00">A+</option>
-			<option value="4.75">A</option>
-			<option value="4.50">B+</option>
-			<option value="4.00">B</option>
-			<option value="3.50">C+</option>
-			<option value="3.00">C</option>
-			<option value="2.50">D+</option>
-			<option value="2.00">D</option>
-			<option value="1.00">F</option>
+			<option data-option="1" value="5.00">A+</option>
+			<option data-option="2" value="4.75">A</option>
+			<option data-option="3" value="4.50">B+</option>
+			<option data-option="4" value="4.00">B</option>
+			<option data-option="5" value="3.50">C+</option>
+			<option data-option="6" value="3.00">C</option>
+			<option data-option="7" value="2.50">D+</option>
+			<option data-option="8" value="2.00">D</option>
+			<option data-option="9" value="1.00">F</option>
 		</select>
 		<hr>
 	</section>
