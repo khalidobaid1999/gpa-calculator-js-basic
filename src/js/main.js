@@ -39,6 +39,7 @@
 			for(i=1;i<=subject_count;i++){
 				var grade = $('.grade'+i).val();
 				var hour = $('.hours'+i).val();
+				//grade = parseFloat(grade); //added grade parsing just incase
 				hour = parseInt(hour);
 				total_hours = total_hours + hour;
 				total_gpa = total_gpa + (grade*hour);
